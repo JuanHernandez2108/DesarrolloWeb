@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet"
+type="text/css"
+href="estilo.css">
+
+
+<html lang="en" background-image="playa.webp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<header>
+    <img class="logo" src="Logo.png">
+    <nav>
+        <ul>
+        <li> <img class="iconos" src="hogar.png"></li>
+        <li class="Texto"><a href="Inicio.html">Inicio</a></li>
+        <li> <img class="iconos" src="avion.png"></li>
+        <li class="Texto"><a href="Boletos.html">Vuelos</a></li>
+        <li> <img class="iconos" src="hotel.png"></li>
+        <li class="Texto"><a href="hotel.html">Hoteles</a></li>
+        <li> <img class="iconos" src="paquete.png"></li>
+        <li class="Texto"><a href="paquete.html">Paquetes</a></li>
+        </ul>
+        
+    </nav>
+</header>
+
+<body>
+    
+
+  
+  
+    <main>
+       
+        <form action="pago.html" class="formulario" id="formulario">
+       
+            <div class="formulario__grupo" id="grupo__destino">
+                <label for="destino" class="formulario__label">Destino</label>
+                <div class="formulario__grupo-input">
+                    <select  class="formulario__input" name="destino" id="destino">
+                    <option value="Destino 1" selected>Cancun, Quintana Roo</option>
+                    <option value="Destino 2" >Oaxaca, Oaxaca</option>
+                    <option value="Destino 2" >Mazatlan, Sinaloa</option>
+                    <option value="Destino 2" >Huasteca Potosina, San Luis Potosi</option>
+                    <option value="Destino 2" >Bacalar, Quintana Roo</option>
+                </select>
+                </div>
+            </div> 
+
+            <div class="formularioA">
+
+                <div class="formulario__grupo" id="grupo__fechasalida">
+                    <label for="fechasalida" class="formulario__label">Fecha de salida</label>
+                    <div class="formulario__grupo-input">
+                        <input type="date" class="formulario__input" name="fechasalida" id="fechasalida">
+                    </div>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__fecharegreso">
+                    <label for="fecharegreso" class="formulario__label">Fecha de regreso</label>
+                    <div class="formulario__grupo-input">
+                        <input type="date" class="formulario__input" name="fecharegreso" id="fecharegreso">
+                    </div>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__Personas">
+                    <label for="Personas" class="formulario__label">Cantidad de personas:</label>
+                    <div class="formulario__grupo-input">
+                        <input type="number" class="formulario__input" name="Personas" id="Personas">
+                    </div>
+                </div>
+
+           </div>
+
+
+           <div class="formularioB">
+                <div class="formulario__grupo" id="grupo__TipoViaje">
+                    <label for="TipoViaje" class="formulario__label">Tipo de asiento</label>
+                    <div class="formulario__grupo-input">
+                               <select  class="formulario__input" name="Asiento" id="Asiento">
+                            <option value="Asiento 1" selected>Asiento tipo 1</option>
+                        </select>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <div class="formularioA">
+
+              
+                <div class="formulario__grupo" id="grupo__viaje1">
+                    <label class="formulario__label">Tipo de viaje: </label>
+                    <label class="formulario__label">
+                        <input class="formulario_checkbox" type="checkbox" name="TViaje1" id="TViaje1">
+                            Sencillo
+                    </label>
+                </div>
+                
+                <div class="formulario__grupo" ><br></div>
+
+                <div class="formulario__grupo" id="grupo__viaje2">
+                    <label class="formulario__label">
+                        <input class="formulario_checkbox" type="checkbox" name="TViaje2" id="TViaje2">
+                            Redondo
+                    </label>
+                </div>
+
+
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+    
+                       <button type="submit" class="formulario__btn">Pagar</button>
+                
+                </div>
+            
+            </div>
+
+              
+            
+            
+                
+
+               
+                
+
+        </form>
+ 
+    </main>
+</body>
+</html>

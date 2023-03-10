@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet"
+type="text/css"
+href="estilo.css">
+
+
+<html lang="en" background-image="playa.webp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<header>
+    <img class="logo" src="Logo.png">
+    <nav>
+        <ul>
+        <li> <img class="iconos" src="hogar.png"></li>
+        <li class="Texto"><a href="Inicio.html">Inicio</a></li>
+        <li> <img class="iconos" src="avion.png"></li>
+        <li class="Texto"><a href="Boletos.html">Vuelos</a></li>
+        <li> <img class="iconos" src="hotel.png"></li>
+        <li class="Texto"><a href="hotel.html">Hoteles</a></li>
+        <li> <img class="iconos" src="paquete.png"></li>
+        <li class="Texto"><a href="paquete.html">Paquetes</a></li>
+        </ul>
+        
+    </nav>
+</header>
+
+<body>
+    
+    <main>
+        <form action="pago.html" class="formulario" id="formulario">
+
+                <div class="formulario__grupo" id="grupo__Hotel">
+                    <label for="Hotel" class="formulario__label">Hotel</label>
+                    <div class="formulario__grupo-input">
+                        <select  class="formulario__input" name="Hotel" id="Hotel">
+                        <option value="Hotel 1" selected>Hotel 1</option>
+                        <option value="Hotel 2" ></option>
+                        <option value="Hotel 2" ></option>
+                        <option value="Hotel 2" ></option>
+                        <option value="Hotel 2" ></option>
+                        </select> 
+                    </div>
+                </div>
+
+          
+
+            <div class="formularioA">
+  
+
+                <div class="formulario__grupo" id="grupo__fechallegada">
+                    <label for="fechallegada" class="formulario__label">Fecha de llegada</label>
+                    <div class="formulario__grupo-input">
+                        <input type="date" class="formulario__input" name="fechallegada" id="fechasalida">
+                    </div>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__fechasalida">
+                    <label for="fechasalida" class="formulario__label">Fecha de salida</label>
+                    <div class="formulario__grupo-input">
+                        <input type="date" class="formulario__input" name="fechasalida" id="fecharegreso">
+                    </div>
+                </div>
+
+
+                <div class="formulario__grupo" id="grupo__Cuartos">
+                    <label for="Cuartos" class="formulario__label">Cantidad de Cuartos:</label>
+                    <div class="formulario__grupo-input">
+                        <input type="number" class="formulario__input" name="Cuartos" id="Cuartos">
+                    </div>
+                </div>
+            </div>
+
+            <div class="formualrioB">
+                <div class="formulario__grupo" id="grupo__paquete">
+                    <label for="paquete" class="formulario__label">Paquete</label>
+                    <div class="formulario__grupo-input">
+                               <select  class="formulario__input" name="destino" id="destino">
+                            <option value="Destino 1" selected>Todo incluido</option>
+                               </select>
+                        </div>
+                </div>
+            </div>
+
+                
+
+                <div class="formulario__grupo" id="grupo__habitacion1">
+                    <label class="formulario__label">Tipo de habitacion:</label>
+                    <label class="formulario__label">
+                        <input class="formulario_checkbox" type="checkbox" name="habitacion1" id="habitacion1">
+                            Sencilla
+                    </label>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__habitacion2">
+                    <label class="formulario__label">
+                        <input class="formulario_checkbox" type="checkbox" name="habitacion2" id="habitacion2">
+                            Doble
+                    </label>
+                </div>
+            
+                <div class="formulario__grupo" id="grupo__habitacion3">
+                    <label class="formulario__label">
+                        <input class="formulario_checkbox" type="checkbox" name="habitacion3" id="habitacion3">
+                            Individual
+                    </label>
+                </div>
+
+              
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+    
+                    <button type="submit" class="formulario__btn">Pagar</button>
+             
+             </div>
+
+                
+
+        </form>
+
+    </main>
+</body>
