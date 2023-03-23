@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet"
+type="text/css"
+href="estilo.css">
+
+
+<html lang="en" background-image="playa.webp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<header>
+               <!-- Menu -->
+    <img class="logo" src="Logo.png">
+    <nav>
+        <ul>
+        <li> <img class="iconos" src="hogar.png"></li>
+        <li class="Texto"><a href="Inicio.html">Inicio</a></li>
+        <li> <img class="iconos" src="avion.png"></li>
+        <li class="Texto"><a href="Boletos.html">Vuelos</a></li>
+        <li> <img class="iconos" src="hotel.png"></li>
+        <li class="Texto"><a href="hotel.html">Hoteles</a></li>
+        <li> <img class="iconos" src="paquete.png"></li>
+        <li class="Texto"><a href="paquete.html">Paquetes</a></li>
+        </ul>
+        
+    </nav>
+</header>
+
+<body>
+    
+    <main>
+
+        <form action="pago.html" class="formulario" id="formulario">
+
+           <!-- Espacio para correo -->
+        <div class="formularioA">
+        <div class="formulario__grupo correo" id="grupo__Correo">
+            <label for="Correo" class="formulario__label">Correo</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="Correo" id="fechasalida">
+            </div>
+        </div>
+
+         <!-- Espacio para No.Tarjeta -->
+            <div class="formulario__grupo tarjeta" id="grupo__Notarjeta">
+                <label for="Notarjeta" class="formulario__label">No. Tarjeta</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="Notarjeta" id="fechasalida">
+                </div>
+            </div>
+
+             <!-- Espacio para CVV -->
+            <div class="formulario__grupo Reducir" id="grupo__CVV">
+                <label for="CVV" class="formulario__label">CVV</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="CVV" id="fechasalida">
+                </div>
+            </div>
+          
+             <!-- Espacio para fecha -->
+            <div class="formulario__grupo" id="grupo__Fecha">
+                <label for="Fecha" class="formulario__label">Fecha</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="Fecha" id="fechasalida">
+                </div>
+            </div>
+          
+            <div class="formulario__grupo" ><br></div>
+        </div>
+
+        
+        <!-- Boton para pagar -->
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <label class="formulario__label" for="boton" id="PrecioPago">$0000.00</label>
+                <button name="boton" type="submit" class="formulario__btn">Pagar</button>
+         
+         </div>
+
+        </form>
+
+    </form>    
+
+        
+
+    </main>
+</body>
